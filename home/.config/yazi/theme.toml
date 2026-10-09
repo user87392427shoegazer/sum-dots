@@ -1,0 +1,30 @@
+[mgr]
+cwd             = { fg = "#1c1c1c", bold = true }
+hovered         = { fg = "#d4d0c8", bg = "#1c1c1c" }
+preview_hovered = { fg = "#d4d0c8", bg = "#1c1c1c" }
+tab_active      = { fg = "#d4d0c8", bg = "#1c1c1c" }
+tab_inactive    = { fg = "#1c1c1c", bg = "#a1a4a1" }
+border_style    = { fg = "#1a1a1a" }
+marker_selected = { fg = "#d4d0c8", bg = "#336393" }
+marker_copied   = { fg = "#d4d0c8", bg = "#6b6862" }
+marker_cut      = { fg = "#d4d0c8", bg = "#8b3a3a" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+mode_normal     = { fg = "#d4d0c8", bg = "#1c1c1c", bold = true }
+mode_select     = { fg = "#d4d0c8", bg = "#336393", bold = true }
+mode_unset      = { fg = "#d4d0c8", bg = "#8b3a3a", bold = true }
+
+[filetype]
+rules = [
+  { url = "*/", fg = "#1c1c1c", bold = true },
+  { url = "*",  fg = "#1c1c1c" },
+]
+
+[icon]
+globs = []
+dirs  = []
+files = []
+exts  = []
+conds = []

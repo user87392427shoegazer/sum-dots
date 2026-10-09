@@ -1,0 +1,36 @@
+[global]
+    origin = bottom-left
+    offset = (12, 12)
+    width = 360
+    notification_limit = 4
+    gap_size = 6
+    padding = 8
+    horizontal_padding = 12
+    frame_width = 2
+    frame_color = "#1a1a1a"
+    corner_radius = 0
+    separator_height = 0
+    font = Gallant Raster Term 16.5
+    markup = full
+    alignment = left
+    icon_position = off
+    show_age_threshold = -1
+    format = "<span background='#a1a4a1'> □         notice         × </span>\n<b>%s</b>\n%b"
+    mouse_left_click = close_current
+    mouse_right_click = close_all
+
+[urgency_low]
+    background = "#d4d0c8"
+    foreground = "#1c1c1c"
+    timeout = 5
+
+[urgency_normal]
+    background = "#d4d0c8"
+    foreground = "#1c1c1c"
+    timeout = 8
+
+[urgency_critical]
+    background = "#d4d0c8"
+    foreground = "#1c1c1c"
+    frame_color = "#8b3a3a"
+    timeout = 0

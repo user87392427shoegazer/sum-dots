@@ -1,0 +1,30 @@
+{
+    "layer": "top",
+    "position": "right",
+    "width": 56,
+    "spacing": 6,
+    "margin": "10 10 10 0",
+
+    "modules-left": ["custom/name"],
+    "modules-center": ["dwl/tags"],
+    "modules-right": ["pulseaudio", "clock"],
+
+    "custom/name": {
+        "format": "m\no\nu\nf\nf\ne\nt\nt\ne",
+        "tooltip": false
+    },
+
+    "dwl/tags": {
+        "num-tags": 9
+    },
+
+    "pulseaudio": {
+        "format": "vol\n{volume}",
+        "format-muted": "mute",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+
+    "clock": {
+        "format": "{:%H\n%M}"
+    }
+}

@@ -1,0 +1,85 @@
+configuration {
+    modi: "drun,run";
+    font: "Gallant Raster Term 13";
+    show-icons: false;
+    drun-display-format: "{name}";
+    display-drun: "run";
+    display-run: "cmd";
+}
+
+* {
+    bg:   #d4d0c8;
+    fg:   #1c1c1c;
+    line: #1a1a1a;
+    sep:  #b9b5aa;
+    background-color: transparent;
+    text-color: @fg;
+    border: 0; margin: 0; padding: 0; spacing: 0;
+}
+
+window {
+    location: center;
+    width: 420px;
+    background-color: @bg;
+    border: 2px;
+    border-color: @line;
+}
+
+mainbox { children: [ titlebar, inputbar, listview ]; }
+
+titlebar {
+    expand: false;
+    orientation: horizontal;
+    children: [ textbox-box, textbox-title, textbox-x ];
+    background-image: linear-gradient(to bottom, #c7c8c4, #838885);
+    border: 0 0 2px 0;
+    border-color: @line;
+    padding: 2px 8px;
+}
+
+inputbar {
+    expand: false;
+    children: [ prompt, entry ];
+    padding: 6px 10px;
+    border: 0 0 1px 0;
+    border-color: @sep;
+}
+prompt { padding: 0 10px 0 0; }
+entry  { placeholder: ""; }
+
+listview {
+    border: 0;
+    lines: 8;
+    scrollbar: false;
+    fixed-height: false;
+}
+
+element {
+    padding: 4px 10px;
+    border: 0 0 1px 0;
+    border-color: @sep;
+}
+element selected.normal {
+    background-color: #1c1c1c;
+    text-color: #d4d0c8;
+}
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+textbox-box {
+    expand: false;
+    content: "□";
+}
+
+textbox-title {
+    expand: true;
+    content: "rofi";
+    horizontal-align: 0.5;
+}
+
+textbox-x {
+    expand: false;
+    content: "×";
+}
